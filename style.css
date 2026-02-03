@@ -1,0 +1,184 @@
+/* בסיס */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    direction: rtl;
+    overflow-x: hidden;
+}
+
+/* כרטיס */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    width: 90%;
+    max-width: 360px; /* קטן יותר לטלפון */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    animation: pop 0.8s ease-out;
+    position: relative;
+    z-index: 1002;
+}
+
+@keyframes pop {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+h1 { margin-bottom: 8px; font-size: 20px; }
+p { margin-bottom: 12px; font-size: 16px; }
+
+/* כפתורים */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 12px;
+    margin: 6px 0;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#yesBtn {
+    background-color: #4CAF50;
+    color: white;
+}
+#yesBtn:hover { transform: scale(1.05); }
+
+#noBtn {
+    background-color: #f44336;
+    color: white;
+}
+
+/* קונפטי רגיל */
+.confetti {
+    position: fixed;
+    top: -10px;
+    width: 12px;
+    height: 12px;
+    opacity: 0.8;
+    animation: fall linear forwards;
+    z-index: 1001;
+}
+@keyframes fall {
+    to { transform: translateY(110vh) rotate(720deg); }
+}
+
+/* לבבות ברקע */
+.heart {
+    position: fixed;
+    bottom: -20px;
+    font-size: 16px;
+    animation: floatUp 6s linear forwards;
+    z-index: 500;
+}
+@keyframes floatUp {
+    to { transform: translateY(-110vh); opacity: 0; }
+}
+
+/* רספונסיביות לנייד */
+@media (max-width: 500px) {
+    .card { width: 95%; padding: 16px; }
+    h1 { font-size: 18px; }
+    p { font-size: 15px; }
+    button { font-size: 15px; padding: 10px; }
+}
+/* בסיס */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    direction: rtl;
+    overflow-x: hidden;
+}
+
+/* כרטיס */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    width: 90%;
+    max-width: 360px; /* קטן יותר לטלפון */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    animation: pop 0.8s ease-out;
+    position: relative;
+    z-index: 1002;
+}
+
+@keyframes pop {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+h1 { margin-bottom: 8px; font-size: 20px; }
+p { margin-bottom: 12px; font-size: 16px; }
+
+/* כפתורים */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 12px;
+    margin: 6px 0;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#yesBtn {
+    background-color: #4CAF50;
+    color: white;
+}
+#yesBtn:hover { transform: scale(1.05); }
+
+#noBtn {
+    background-color: #f44336;
+    color: white;
+}
+
+/* קונפטי רגיל */
+.confetti {
+    position: fixed;
+    top: -10px;
+    width: 12px;
+    height: 12px;
+    opacity: 0.8;
+    animation: fall linear forwards;
+    z-index: 1001;
+}
+@keyframes fall {
+    to { transform: translateY(110vh) rotate(720deg); }
+}
+
+/* לבבות ברקע */
+.heart {
+    position: fixed;
+    bottom: -20px;
+    font-size: 16px;
+    animation: floatUp 6s linear forwards;
+    z-index: 500;
+}
+@keyframes floatUp {
+    to { transform: translateY(-110vh); opacity: 0; }
+}
+
+/* רספונסיביות לנייד */
+@media (max-width: 500px) {
+    .card { width: 95%; padding: 16px; }
+    h1 { font-size: 18px; }
+    p { font-size: 15px; }
+    button { font-size: 15px; padding: 10px; }
+}
